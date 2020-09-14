@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DashboardController">
+   <children>
+      <TableView fx:id="patientInfoView" layoutY="66.0" prefHeight="321.0" prefWidth="215.0">
+        <columns>
+          <TableColumn fx:id="patientIDCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="patientNameCol" prefWidth="139.0" text="Patient Name" />
+        </columns>
+      </TableView>
+      <Accordion layoutY="387.0" onMouseClicked="#populateTitlePaneTables" prefHeight="280.0" prefWidth="861.0">
+        <panes>
+          <TitledPane fx:id="weeklyPane" animated="false" text="Weekly">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="weeklyTableView" onMouseClicked="#weeklyDoubleClick" prefHeight="201.0" prefWidth="861.0">
+                          <columns>
+                            <TableColumn fx:id="weeklyIdCol" prefWidth="53.0" text="ID" />
+                            <TableColumn fx:id="weeklyNameCol" prefWidth="93.0" text="Patient Name" />
+                              <TableColumn fx:id="weeklyPhoneCol" prefWidth="103.0" text="Phone" />
+                              <TableColumn fx:id="weeklyCounselorCol" prefWidth="70.0" text="Counselor" />
+                              <TableColumn fx:id="weeklyDescriptionCol" prefWidth="92.0" text="Description" />
+                              <TableColumn fx:id="weeklyNotesCol" prefWidth="138.0" text="Notes" />
+                              <TableColumn fx:id="weeklyStartCol" prefWidth="112.0" text="Start" />
+                              <TableColumn fx:id="weeklyEndCol" prefWidth="112.0" text="End" />
+                              <TableColumn fx:id="weeklyDateCol" prefWidth="103.0" text="Date" />
+                              <TableColumn fx:id="weeklyAptIdCol" editable="false" minWidth="0.0" prefWidth="0.0" text="Column X" visible="false" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="biWeeklyPane" animated="false" text="Bi-Weekly">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="biWeeklyTableView" onMouseClicked="#biWeeklyDoubleClick" prefHeight="200.0" prefWidth="861.0">
+                          <columns>
+                              <TableColumn fx:id="biWeeklyIdCol" prefWidth="53.0" text="ID" />
+                              <TableColumn fx:id="biWeeklyNameCol" prefWidth="93.0" text="Patient Name" />
+                              <TableColumn fx:id="biWeeklyPhoneCol" prefWidth="103.0" text="Phone" />
+                              <TableColumn fx:id="biWeeklyCounselorCol" prefWidth="70.0" text="Counselor" />
+                              <TableColumn fx:id="biWeeklyDescriptionCol" prefWidth="92.0" text="Description" />
+                              <TableColumn fx:id="biweeklyNotesCol" prefWidth="138.0" text="Notes" />
+                              <TableColumn fx:id="biWeeklyStartCol" prefWidth="112.0" text="Start" />
+                              <TableColumn fx:id="biWeeklyEndCol" prefWidth="112.0" text="End" />
+                              <TableColumn fx:id="biWeeklyDateCol" prefWidth="103.0" text="Date" />
+                              <TableColumn fx:id="biWeeklyAptIdCol" editable="false" prefWidth="75.0" text="Column X" visible="false" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="monthlyPane" animated="false" text="Monthly">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="monthlyTableView" onMouseClicked="#monthlyDoubleClick" prefHeight="200.0" prefWidth="861.0">
+                          <columns>
+                              <TableColumn fx:id="monthlyIdCol" prefWidth="53.0" text="ID" />
+                              <TableColumn fx:id="monthlyNameCol" prefWidth="93.0" text="Patient Name" />
+                              <TableColumn fx:id="monthlyPhoneCol" prefWidth="103.0" text="Phone" />
+                              <TableColumn fx:id="monthlyCounselorCol" prefWidth="70.0" text="Counselor" />
+                              <TableColumn fx:id="monthlyDescriptionCol" prefWidth="92.0" text="Description" />
+                              <TableColumn fx:id="monthlyNotesCol" prefWidth="138.0" text="Notes" />
+                              <TableColumn fx:id="monthlyStartCol" prefWidth="112.0" text="Start" />
+                              <TableColumn fx:id="monthlyEndCol" prefWidth="112.0" text="End" />
+                              <TableColumn fx:id="monthlyDateCol" prefWidth="103.0" text="Date" />
+                              <TableColumn fx:id="monthlyAptIdCol" editable="false" prefWidth="75.0" text="Column X" visible="false" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <TableView fx:id="patientAppointments" layoutX="215.0" layoutY="92.0" onMouseClicked="#dayDoubleclick" prefHeight="268.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="patientNameColumn" prefWidth="82.0" text="Name" />
+           <TableColumn fx:id="descriptionColumn" prefWidth="152.0" text="Description" />
+            <TableColumn fx:id="phoneColumn" prefWidth="111.0" text="Phone" />
+            <TableColumn fx:id="startColumn" prefWidth="99.0" text="Start" />
+            <TableColumn fx:id="endColumn" prefWidth="99.0" text="End" />
+            <TableColumn fx:id="dateColumn" prefWidth="134.0" text="Date" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+      <Button layoutX="215.0" layoutY="66.0" mnemonicParsing="false" onAction="#actionAddPatient" text="Add Patient" />
+      <Button layoutX="377.0" layoutY="66.0" mnemonicParsing="false" onAction="#actionDeletePatient" text="Delete Patient" />
+      <Button layoutX="297.0" layoutY="66.0" mnemonicParsing="false" onAction="#actionEditPatient" text="Edit Patient" />
+      <Button layoutX="215.0" layoutY="360.0" mnemonicParsing="false" onAction="#addAppointment" text="Add Appointment" />
+      <Button fx:id="editButton" layoutX="329.0" layoutY="360.0" mnemonicParsing="false" onAction="#editAppointment" text="Edit Appointment" />
+      <Button layoutX="443.0" layoutY="360.0" mnemonicParsing="false" onAction="#actionDeleteAppointment" text="Delete Appointment" />
+      <Label fx:id="DateLabel" layoutX="771.0" layoutY="44.0" text="Date" />
+      <TextField fx:id="searchPatient" alignment="CENTER" layoutY="39.0" onKeyPressed="#onKeyPressed" prefHeight="27.0" prefWidth="150.0" promptText="Search" />
+      <Button layoutX="160.0" layoutY="39.0" mnemonicParsing="false" onAction="#actionSearchPatient" text="Search" />
+      <Label layoutX="366.0" layoutY="14.0" text="DASHBOARD">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="599.0" layoutY="360.0" mnemonicParsing="false" text="Reports" onAction="#viewReports" />
+   </children>
+</AnchorPane>

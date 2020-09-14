@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.EditAppointmentController">
+    <children>
+        <SplitPane dividerPositions="0.26248548199767713" layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="863.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="186.0">
+                    <children>
+                        <TextField fx:id="ptNameField" alignment="CENTER" editable="false" layoutX="17.0" layoutY="198.0" prefHeight="30.0" prefWidth="166.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <Label alignment="CENTER" layoutX="49.0" layoutY="158.0" text="Patient Name">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ptIdField" alignment="CENTER" editable="false" layoutX="52.0" layoutY="109.0" prefHeight="30.0" prefWidth="96.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <Label alignment="CENTER" layoutX="83.0" layoutY="73.0" text="ID">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ptPhoneField" alignment="CENTER" editable="false" layoutX="17.0" layoutY="313.0" prefHeight="30.0" prefWidth="166.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <Label alignment="CENTER" layoutX="48.0" layoutY="265.0" text="Phone Number">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0"  prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TextArea fx:id="notesArea" onMouseClicked="#notesEnableSaveButton" layoutX="22.0" layoutY="244.0" prefHeight="141.0" prefWidth="447.0" promptText="Notes..." />
+                        <DatePicker fx:id="calendar" onMouseClicked="#calendarEnableSaveButton" layoutX="415.0" layoutY="179.0" />
+                        <ComboBox fx:id="descriptionBox" onMouseClicked="#descriptionEnableSaveButton" layoutX="234.0" layoutY="179.0" prefWidth="150.0" />
+                        <ComboBox fx:id="times" layoutX="22.0"  onMouseClicked="#timesEnableSaveButton" layoutY="179.0" prefWidth="150.0" />
+                        <TextField fx:id="cField" alignment="CENTER" layoutX="22.0" layoutY="76.0" prefHeight="30.0" prefWidth="166.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <Label alignment="CENTER" layoutX="67.0" layoutY="31.0" text="Counselor">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="saveEditButton" disable="true" layoutX="480.0" layoutY="358.0" mnemonicParsing="false" onAction="#actionEditAppointment" prefHeight="27.0" prefWidth="57.0" text="Save" />
+                        <Button layoutX="552.0" layoutY="358.0" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" />
+                    <Label alignment="CENTER" layoutX="337.0" layoutY="13.0" text="Edit Appointment">
+                        <font>
+                            <Font name="Apple SD Gothic Neo Regular" size="24.0" />
+                        </font>
+                    </Label>
+                        <Label alignment="CENTER" layoutX="288.0" layoutY="140.0" text="Type:">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="480.0" layoutY="140.0" text="Date:">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="76.0" layoutY="140.0" text="Time:">
+                            <font>
+                                <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

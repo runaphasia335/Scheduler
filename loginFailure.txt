@@ -1,0 +1,16 @@
+2020-07-26T10:13:17.419-04:00[America/New_York]  Counselor ID 7
+2020-07-26T16:42:35.881-04:00[America/New_York]  Counselor ID 7
+2020-07-27T20:43:10.867-04:00[America/New_York]  Counselor ID 7
+2020-07-28T21:18:51.360-04:00[America/New_York]  Counselor ID 7
+2020-08-03T10:14:26.432-04:00[America/New_York]  Counselor ID 8
+2020-08-05T10:55:03.185-04:00[America/New_York]  Counselor ID 7
+2020-08-05T10:58:58.942-04:00[America/New_York]  Counselor ID admin
+2020-08-05T13:00:54.651-04:00[America/New_York]  Counselor ID admin
+2020-08-05T18:56:11.127-04:00[America/New_York]  Counselor ID admin
+2020-08-05T21:30:52.160-04:00[America/New_York]  Counselor ID admin
+2020-08-07T10:25:31.504-04:00[America/New_York] /  Counselor ID admin2020-08-07T10:25:31.508-04:00[America/New_York]
+2020-08-07T10:25:34.922-04:00[America/New_York] /  Counselor ID admin2020-08-07T10:25:34.922-04:00[America/New_York]
+2020-08-07T10:27:06.350-04:00[America/New_York] /  Counselor ID admin2020-08-07T10:27:06.354-04:00[America/New_York]
+2020-08-07T11:46:50.214-04:00[America/New_York] /  Counselor ID admin2020-08-07T11:46:50.223-04:00[America/New_York]
+2020-08-08T15:45:42.217-04:00[America/New_York] /  Counselor ID admin 2020-08-08T15:45:42.217-04:00[America/New_York]
+2020-08-08T15:49:29.056-04:00[America/New_York] /  Counselor ID admin 2020-08-08T15:49:29.056-04:00[America/New_York]

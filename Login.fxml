@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="622.0">
+         <children>
+            <TextField fx:id="userNameField" alignment="CENTER" layoutX="221.0" layoutY="136.0" prefHeight="34.0" prefWidth="200.0" promptText="Please input username">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="221.0" layoutY="226.0" prefHeight="34.0" prefWidth="200.0" promptText="Please input password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></PasswordField>
+            <PasswordField fx:id="pinField" alignment="CENTER" layoutX="261.0" layoutY="306.0" prefHeight="34.0" prefWidth="121.0" promptText="Please input pin">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="231.0" layoutY="372.0" mnemonicParsing="false" onAction="#actionLogin" text="Login" />
+            <Button fx:id="cancelButton" layoutX="350.0" layoutY="372.0" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" />
+            <Label fx:id="loginLabel" layoutX="255.0" layoutY="14.0" prefHeight="64.0" prefWidth="152.0" text="Login">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="269.0" layoutY="96.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="274.0" layoutY="192.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="pinLabel" layoutX="308.0" layoutY="283.0" text="Pin">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="407.0" text="Main Office:" fx:id="mainOfficeLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="407.0" text="Local time:" fx:id="localTimeLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="mainOfficeDate" layoutX="131.0" layoutY="462.0" text="Label" />
+      <Label fx:id="userDate" layoutX="413.0" layoutY="462.0" text="localTimeLabel" />
+      <Label fx:id="mainOfficeTime" layoutX="146.0" layoutY="441.0" text="Label" />
+      <Label fx:id="userTime" layoutX="427.0" layoutY="441.0" prefHeight="5.0" prefWidth="83.0" text="time" />
+
+   </children>
+</AnchorPane>
